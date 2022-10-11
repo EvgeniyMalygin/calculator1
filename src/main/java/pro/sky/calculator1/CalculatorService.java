@@ -26,7 +26,7 @@ public class CalculatorService {
 
     public String division(double num1, double num2) {
         if (num2 == 0) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("Делить на 0 нельзя!");
         }
         double sum = num1 / num2;
         return num1 + " / " + num2 + " = " + sum;
